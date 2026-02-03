@@ -83,29 +83,29 @@
 //     [Key in keyof Movie]-?: Movie[Key];
 // };
 
-type MyOptioanl<Entity extends object> = {
-  [Key in keyof Entity]?: Entity[Key];
-};
+// type MyOptioanl<Entity extends object> = {
+//   [Key in keyof Entity]?: Entity[Key];
+// };
 
-type MyReadonly<Entity extends object> = {
-  readonly [Key in keyof Entity]: Entity[Key];
-};
+// type MyReadonly<Entity extends object> = {
+//   readonly [Key in keyof Entity]: Entity[Key];
+// };
 
-type MyEditable<Entity extends object> = {
-  -readonly [Key in keyof Entity]: Entity[Key];
-};
+// type MyEditable<Entity extends object> = {
+//   -readonly [Key in keyof Entity]: Entity[Key];
+// };
 
-type MyRequired<Entity extends object> = {
-  [Key in keyof Entity]-?: Entity[Key];
-};
+// type MyRequired<Entity extends object> = {
+//   [Key in keyof Entity]-?: Entity[Key];
+// };
 
-type OptioanlMovie = MyOptioanl<Movie>;
+// type OptioanlMovie = MyOptioanl<Movie>;
 
-type ReadonlyMovie = MyReadonly<Movie>;
+// type ReadonlyMovie = MyReadonly<Movie>;
 
-type EditableMovie = MyEditable<Movie>;
+// type EditableMovie = MyEditable<Movie>;
 
-type RequiredMovie = MyRequired<Movie>;
+// type RequiredMovie = MyRequired<Movie>;
 
 // type OptioanlMovie = Partial<Movie>
 
